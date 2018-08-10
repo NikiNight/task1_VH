@@ -67,10 +67,6 @@ body{
 }
 
 @media screen and (max-width: 250px){
-    .popular-boards-tiles{
-        /*flex-direction: row;*/
-    }
-
     .popular-boards-tiles .board-item{
         width: auto;
         height: auto;
