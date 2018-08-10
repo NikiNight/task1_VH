@@ -11,7 +11,13 @@ body{
     left: 0;
 
 }
-.wrapper{
+
+.popular-boards-tiles-container{
+    width: 100%;
+}
+
+.popular-boards-tiles{
+    margin: auto;
     width: 722px;
     height: 250px;
     display: flex;
@@ -22,56 +28,28 @@ body{
     overflow: hidden;
     padding: 5px;
     box-sizing: border-box;
-}
-
-.cell{
-    background-color: #ff90d8;
-    border: 5px solid lavender;
-}
-
-.cell-level-1{
-    flex-grow: 1;
-}
-
-.parent-cell-level-1{
-    display: flex;
-    flex-grow: 2;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
-.parent-cell-level-2{
+.board-item {
     flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #ff90d8;
+    border: 5px solid lavender;
+    box-sizing: border-box;
 }
 
-.cell-level-2{
-    flex-grow: 1;
+.big-tile{
+    height: 100%;
+    width: 33%;
 }
 
-.cell-level-2:first-child{
-    flex-grow: 2;
+.medium-tile{
+    width: 33%;
+    height: 50%;
 }
 
-@media screen and (max-width: 450px){
-    .cell-level-2{
-        flex-basis: 100px;
-    }
+.small-tile{
+    height: 50%;
+    width: 17%;
 }
-
-@media screen and (max-width: 200px){
-    .wrapper{
-        flex-direction: column;
-    }
-    .parent-cell-level-1{
-        flex-grow: 5;
-    }
-}
-
-@media screen and (max-height: 250px){
-    .wrapper{
-        height: 100%;
-    }
-}
-
-/*Test new branch*/
