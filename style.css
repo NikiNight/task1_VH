@@ -24,13 +24,13 @@ body{
     box-sizing: border-box;
 }
 
-.cell-level-1{
-    flex-grow: 1;
-}
-
 .cell{
     background-color: #ff90d8;
     border: 5px solid lavender;
+}
+
+.cell-level-1{
+    flex-grow: 1;
 }
 
 .parent-cell-level-1{
@@ -51,4 +51,25 @@ body{
 
 .cell-level-2:first-child{
     flex-grow: 2;
+}
+
+@media screen and (max-width: 450px){
+    .cell-level-2{
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (max-width: 200px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .parent-cell-level-1{
+        flex-grow: 5;
+    }
+}
+
+@media screen and (max-height: 250px){
+    .wrapper{
+        height: 100%;
+    }
 }
