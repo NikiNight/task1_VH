@@ -53,3 +53,26 @@ body{
     height: 50%;
     width: 17%;
 }
+
+@media screen and (max-width: 722px){
+    .popular-boards-tiles{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .popular-boards-tiles .board-item{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .popular-boards-tiles{
+        /*flex-direction: row;*/
+    }
+
+    .popular-boards-tiles .board-item{
+        width: auto;
+        height: auto;
+    }
+}
