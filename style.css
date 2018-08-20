@@ -33,24 +33,23 @@ body{
 }
 
 .board-item {
-    flex-grow: 1;
     background-color: #ff90d8;
     border: 5px solid lavender;
     box-sizing: border-box;
 }
 
 .big-tile{
-    height: 100%;
+    flex-basis: 100%;
     width: 33%;
 }
 
 .medium-tile{
     width: 33%;
-    height: 50%;
+    flex-basis: 50%;
 }
 
 .small-tile{
-    height: 50%;
+    flex-basis: 50%;
     width: 17%;
 }
 
@@ -68,7 +67,7 @@ body{
 
 @media screen and (max-width: 250px){
     .popular-boards-tiles .board-item{
-        width: auto;
-        height: auto;
+        flex-basis: 14%;
+        width: 100%;
     }
 }
